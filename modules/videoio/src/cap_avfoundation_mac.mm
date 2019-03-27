@@ -378,7 +378,7 @@ int CvCaptureCAM::startCaptureDevice(int cameraNum) {
 
     // create session
     mCaptureSession = [[AVCaptureSession alloc] init];
-    mCaptureSession.sessionPreset = AVCaptureSessionPresetMedium;
+    mCaptureSession.sessionPreset = AVCaptureSessionPresetHigh;
     [mCaptureSession addInput: mCaptureDeviceInput];
     [mCaptureSession addOutput: mCaptureVideoDataOutput];
 
